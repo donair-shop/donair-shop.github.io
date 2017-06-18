@@ -156,13 +156,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="price">[[_formatPrice(item.price)]]</div>
         <div class="pickers">
           <shop-select>
-            <label id="sizeLabel" prefix>Size</label>
+            <label id="sizeLabel" prefix>Add Feta</label>
             <select id="sizeSelect" aria-labelledby="sizeLabel">
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M" selected>M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
+              <option value="No" selected>No</option>
+              <option value="Yes (add $1)">Yes</option>
             </select>
             <shop-md-decorator aria-hidden="true">
               <shop-underline></shop-underline>
@@ -187,7 +184,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <p id="desc"></p>
         </div>
         <shop-button responsive>
-          <button on-click="_addToCart" aria-label="Add this item to cart">Add to Cart</button>
+          <button on-click="_addToCart" aria-label="Add this item to order">Add to Order</button>
         </shop-button>
       </div>
     </div>

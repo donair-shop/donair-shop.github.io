@@ -120,7 +120,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <iron-form id="checkoutForm"
               on-iron-form-response="_didReceiveResponse"
               on-iron-form-presubmit="_willSendRequest">
-            <form method="post" action="data/sample_success_response.json">
+            <form method="post" action="/data/sample_success_response.json">
 
               <div class="subsection" visible$="[[!_hasItems]]">
                 <p class="empty-cart">Your <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
@@ -128,7 +128,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
               <header class="subsection" visible$="[[_hasItems]]">
                 <h1>Checkout</h1>
-                <span>Shop is a demo app - form data will not be sent</span>
+                <span>Plant Shop is a demo app - form data will not be sent</span>
               </header>
 
               <div class="subsection grid" visible$="[[_hasItems]]">
@@ -184,17 +184,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                       <input type="text" id="shipState" name="shipState" pattern=".{2,}"
                           placeholder="State/Province" required
                           aria-labelledby="shipStateLabel shipAddressHeading">
-                      <shop-md-decorator error-message="Invalid State/Province" aria-hidden="true">
-                        <label id="shipStateLabel">State/Province</label>
+                      <shop-md-decorator error-message="Invalid Province" aria-hidden="true">
+                        <label id="shipStateLabel">Province/State</label>
                         <shop-underline></shop-underline>
                       </shop-md-decorator>
                     </shop-input>
                     <shop-input>
                       <input type="text" id="shipZip" name="shipZip" pattern=".{4,}"
-                          placeholder="Zip/Postal Code" required
+                          placeholder="Postal Code" required
                           aria-labelledby="shipZipLabel shipAddressHeading">
-                      <shop-md-decorator error-message="Invalid Zip/Postal Code" aria-hidden="true">
-                        <label id="shipZipLabel">Zip/Postal Code</label>
+                      <shop-md-decorator error-message="Invalid Postal Code" aria-hidden="true">
+                        <label id="shipZipLabel">Postal/Zip Code</label>
                         <shop-underline></shop-underline>
                       </shop-md-decorator>
                     </shop-input>
@@ -204,8 +204,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     <shop-select>
                       <select id="shipCountry" name="shipCountry" required
                           aria-labelledby="shipCountryLabel shipAddressHeading">
-                        <option value="US" selected>United States</option>
-                        <option value="CA">Canada</option>
+                        <!--<option value="US" selected>United States</option>-->
+                        <option value="CA" selected>Canada</option>
+                        <option value="US">United States</option>
                       </select>
                       <shop-md-decorator aria-hidden="true">
                         <shop-underline></shop-underline>
@@ -253,7 +254,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                             autocomplete="billing address-level1"
                             aria-labelledby="billStateLabel billAddressHeading">
                         <shop-md-decorator error-message="Invalid State/Province" aria-hidden="true">
-                          <label id="billStateLabel">State/Province</label>
+                          <label id="billStateLabel">Province/State</label>
                           <shop-underline></shop-underline>
                         </shop-md-decorator>
                       </shop-input>
@@ -263,7 +264,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                             autocomplete="billing postal-code"
                             aria-labelledby="billZipLabel billAddressHeading">
                         <shop-md-decorator error-message="Invalid Zip/Postal Code" aria-hidden="true">
-                          <label id="billZipLabel">Zip/Postal Code</label>
+                          <label id="billZipLabel">Postal/Zip Code</label>
                           <shop-underline></shop-underline>
                         </shop-md-decorator>
                       </shop-input>
@@ -274,8 +275,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         <select id="billCountry" name="billCountry" required$="[[hasBillingAddress]]"
                             autocomplete="billing country"
                             aria-labelledby="billCountryLabel billAddressHeading">
-                          <option value="US" selected>United States</option>
-                          <option value="CA">Canada</option>
+                          <option value="CA" selected>Canada</option>
+                          <option value="US">United States</option>
                         </select>
                         <shop-md-decorator aria-hidden="true">
                           <shop-underline></shop-underline>
