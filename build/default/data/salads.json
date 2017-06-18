@@ -5,7 +5,7 @@
     "category":"salads",
     "price":5.60,
     "description":"A delicious greek salad",
-    "image":"images/salad.jpg",
+    "image":"images/salad-min.jpeg",
     "largeImage":"images/salad.jpg"
   },
   {
@@ -14,7 +14,7 @@
     "category":"salads",
     "price":7.60,
     "description":"A delicious large greek salad",
-    "image":"images/greek-salad.jpg",
+    "image":"images/greek-salad-min.jpeg",
     "largeImage":"images/greek-salad.jpg"
   },
   {

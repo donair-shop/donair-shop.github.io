@@ -5,7 +5,7 @@
     "category":"wraps",
     "price":7.88,
     "description":"A delicious chicken wrap",
-    "image":"images/wraps.jpg",
+    "image":"images/wraps-min.jpeg",
     "largeImage":"images/wraps.jpg"
   },
     {
@@ -14,7 +14,7 @@
     "category":"wraps",
     "price":7.88,
     "description":"A delicious beef wrap",
-    "image":"images/special.jpg",
+    "image":"images/special-min.jpeg",
     "largeImage":"images/special.jpg"
   },
     {
@@ -23,7 +23,7 @@
     "category":"wraps",
     "price":7.88,
     "description":"A delicious falafel wrap",
-    "image":"images/falafel.jpg",
+    "image":"images/falafel-min.jpeg",
     "largeImage":"images/falafel.jpg"
   }
 ]
